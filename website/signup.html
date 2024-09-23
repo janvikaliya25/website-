@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+         <!-- fontawsome cdn -->
+         <!-- <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+       /> -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header{
+            height: 80px;
+            position: relative;
+        }
+        #logo{
+            height: 100%;
+            width: 10%;
+        }
+        #logo img{
+             width: 10%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              cursor: pointer;
+        }
+        #sign{
+            height: 700px;
+            width: 30%;
+            /* border: 1px solid black; */
+            margin-top: 3%;
+            margin-left: 35%;
+            background-color: #faf1f1;
+        }
+        form{
+            width: 90%;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        #btn{
+            height: 40px;
+            border: none;
+            background-color: #007b8f;
+        }
+        span{
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex align-items-center justify-content-between">
+            <div class="" id="logo">
+                <img
+                  src="image/Zenni_Logo (1).jpg"
+                  alt=""
+                  class=""/>
+        </div>
+    </header>
+<div  id="sign" class="shadow-lg border">
+    <h3 style="color: rgb(74, 68, 68);" class="mt-4 ms-4">SIGN IN</h3>
+
+    <div id="goggle" class="border border-dark d-flex justify-content-evenly align-items-center" style="height: 40px;width: 250px;border-radius: 10px;cursor: pointer;margin: auto;">
+        <img src="https://cdn2.hubspot.net/hubfs/53/image8-2.jpg" alt="" style="height: 30px;width: 60px;">
+        <p class="mt-3 me-4">Sign in with Google</p>
+       </div>
+       <div class="border border-dark d-flex justify-content-evenly align-items-center" style="height: 40px;width: 250px;border-radius: 10px;cursor: pointer;margin-top: 20px;margin-left:28%;background-color: black;">
+        <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg" alt="" style="height: 30px;width: 40px;">
+        <p class="mt-3 me-4" style="color: #faf1f1;">Sign in with Google</p>
+       </div>
+       <p class="text-center text-secondary mt-3">Fewer passwords, less headaches: Keep everything simple and <br> secure by signing up with your Google account.</p>
+    <form action="" id="form" class="">
+        <h5 class="text-center text-secondary mt-3">Or sign up with your email</h5>
+        <input type="text" placeholder="First Name" id="first" class="form-control">
+        <span id="fname"></span><br>
+        <input type="text" placeholder="Last Name" id="last" class="form-control">
+        <span id="lname"></span><br>
+        <input type="email" placeholder="Email(your@email.com)" id="email" class="form-control">
+        <span id="em"></span> <br>
+        <input type="password" placeholder="password" id="pass" class="form-control">
+        <span id="lenght"></span><br>
+        <button id="btn" class="btn text-light fs-6 mt-3">CREAT ACCOUNT</button><br><br>
+        <span class="text-secondary"><input type="checkbox"> I Agree to receive news and exclusive offers from Zenni Optical.</span>
+    </form>
+    <p class="text-secondary" style="margin-left: 30px;">Yes, I want to join Zenni Rewards, reside in the U.S, and agree to the Rewards <a href="" style="text-decoration: none;color: #007b8f;">TERMS & CONDITIONS.</a></p>
+</div>
+    <script src="signup.js"></script>  
+</body>
+</html>

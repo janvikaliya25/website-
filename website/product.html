@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            #sidebar{
+                width: 20%;
+                margin-top: 20px;
+                height: 600px;
+                position: sticky;
+                top: 8.5%;
+                left: 0;
+            }
+            #select{
+                width: 75%;
+                margin-top: 20px;
+            }
+            #btn1{
+                margin-top: 20px;
+                height: 50px;
+                background-color: transparent;
+                width: 150px;
+                border: 1px solid #097c8e;
+                color: #097c8e;
+            }
+            #btn1:hover{
+                background-color: #097c8e;
+                color: white;
+            }
+            #product{
+                width: 100%;
+            }
+            #card{
+                border: 1px solid black;
+                width: 22%;
+                height: 400px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            #img{
+                height: 35%;
+                width: 90%;
+            }
+            #img img{
+                height: 100%;
+                width: 100%;
+                margin-left: 5%;
+            }
+            #detail{
+                padding-left: 25px;
+                display: flex;
+                height: 40%;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            #btn{
+                height: 40px;
+                width: 120px;
+                border-radius: 7px;
+                border: none;
+                background-color: black;
+                color: white;
+            }
+            #btn:hover{
+                background-color: transparent;
+                color: black;
+                border: 1px solid black;
+            }
+            #info{
+                display: flex;
+                align-items: center;
+                height: 50px;
+                position: relative;
+            }
+            #rate{
+                color: gray;
+                margin-top: 12px;
+                position: absolute;
+                right: 10px;
+                font-size: 13px;
+            }
+            #icon{
+                color: #efb92e;
+            }
+            header{
+                height: 80px;
+                border: 1px solid gray;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                background-color: white;
+            }
+
+            #order{
+    border: 1px solid gray;
+}
+#order #social{
+    width: 30%;
+}
+#app{
+    height: 100px;
+    border: 1px solid gray;
+    background-color: #f5f5f5;
+}
+#app #content{
+    width: 30%;
+}
+#footer{
+    height: 180px;
+}
+#ch4{
+    margin-top: 5px;
+    width: 25%;
+    height: 100%;
+}
+        </style>
+</head>  
+
+<body>
+     <!-- header section -->
+    <header class="d-flex justify-content-between align-items-center">
+        <div id="logo" class="" style="height: 100%;width: 10%;">
+            <img src="image/Zenni_Logo (1).jpg" alt="" style="height: 100%;width: 100%;">
+        </div>
+        <div id="input" class=" d-flex justify-content-evenly align-items-center" style="width: 40%;height: 100%;position: relative;">
+            <i class="fa-solid fa-magnifying-glass" style="position: absolute;left: 12%;font-size: 20px;margin-top: 5px;"></i>
+            <input type="search" placeholder="search your items" style="width: 80%;height: 50px;border-radius: 50px;padding-left: 40px;border: 2px solid gray;">
+        </div>
+        <div id="logo2" class="d-flex justify-content-between align-items-center" style="height: 100%;width: 10%;">
+            <div class="w-50 d-flex justify-content-evenly flex-column align-items-center" style="height: 100%;color: gray;">
+                <i class="fa-regular fa-heart" style="font-size: 30px;margin-top: 10px;"></i>
+                <p >Favorites</p>
+            </div>
+            <div class="w-50 d-flex justify-content-evenly flex-column align-items-center" style="height: 100%;color: gray;">
+                <i class="fa-solid fa-cart-shopping" style="font-size: 30px;margin-top: 10px;"></i>
+                <p>Cart</p>
+            </div>
+        </div>
+    </header>
+    <!-- header section -->
+
+    <!-- product section -->
+    <div id="main" class="d-flex justify-content-evenly  align-item-center">
+        <!-- sidebar section -->
+        <div id="sidebar" class="">
+
+          <span class="d-flex justify-content-between align-item-center"><h3>Filters</h3> <a href="" style="margin-top: 5px;text-decoration: none;color: black;">Hide Filters</a></span>
+             <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                     <h5 style="margin-left: -20px;"> BRANDS</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Zenni</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Adidas</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Nike</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Fossil</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Calvin Klein</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Cerrera</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Guess</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Jimmy Choo</a></span><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <h5 style="margin-left: -20px;">Price</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">$6.95</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Under $10</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Under $20</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Under $30</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Above $30</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">On Sale</a></span><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <h5 style="margin-left: -20px;">Prescription</h5>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Bifocale</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Progressives</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">High Prescription</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Readers</a></span><br>
+                        <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Non-Prescription</a></span><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                          <h5 style="margin-left: -20px;">Comfort Features</h5>
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                          <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Nose Pads</a></span><br>
+                          <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Light Weight</a></span><br>
+                          <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Spring Hinges</a></span><br>
+                          <span><input type="checkbox"> <a href="" style="text-decoration: none;color: black;margin-left: 10px;">Universal Fit</a></span><br>
+                      </div>
+                    </div>
+                  </div>
+          </div> 
+
+        </div>
+         <!-- sidebar section -->
+
+         <!-- items section -->
+         <div id="select">
+            <h3>Shop Eyeglass Frames Online</h3>
+            <p style="font-size: 15px;color: gray;position: relative;">Find the right pair of eyeglasses from our selection of high-qualitTry our virtual try-on tool to see how you will look or <br> check out which eyeglass frame is right for you.
+                <a href="" style="color: #097c8e;">...read more</a>
+                <a href="" style="color: #097c8e;position: absolute;right: 50px;font-weight: bold;text-decoration: none;">Find your size</a>
+            </p>
+            <hr>
+            <button id="btn1">Top-Rated</button>
+            <button id="btn1">Desiner-Brands</button>
+            <button id="btn1">Minimalist</button>
+            <button id="btn1">Retro Glasses</button>
+            <button id="btn1">Bold Styles</button>
+            <hr style="margin-top: 30px;">
+        <div id="product" class="d-flex justify-content-between align-items-center flex-wrap">
+            
+        </div>
+    </div>
+         <!-- items section -->
+    </div>
+    <!-- product section -->
+
+           <!-- footer section -->
+     <div class="d-flex justify-content-evenly align-items-center flex-column" id="order" style="margin-top: 50px;">
+        <h1 class="text-center" style="margin-top: 50px;">Shop by Price</h1>
+        <p class="text-center" style="font-size: 20px;">Find affordable frames to fit your budget and style.</p>
+          <h3 class="text-center">Get 10% off your first order</h3>
+          <div id="social" class="d-flex justify-content-evenly align-items-center">
+            <img src="https://static.zennioptical.com/marketing/logo/zlogo/ZEN_Sym_teal.png" alt="" style="height: 30px;width: 40px;">
+            <h3 class="text-secondary">Socialize with us</h3>
+            <p class="fs-2 mt-2" style="color: #097c8e; cursor: pointer;"><i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-pinterest"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></p>
+          </div>
+        </div>
+      
+
+ 
+         <div class="d-flex justify-content-evenly align-items-center" id="app">
+          <div class="d-flex justify-content-evenly align-items-center" id="content">
+            <img src="https://static.zennioptical.com/marketing/logo/zlogo/ZEN_Sym_teal.png" alt="" style="height: 30px;width: 40px;">
+            <h3 class="text-secondary">Get the app</h3>
+            <img src="https://static.zennioptical.com/marketing/logo/download-on-the-app-store.svg" alt="">
+            <img src="https://static.zennioptical.com/marketing/logo/get_it_on_google_play.png" alt="" style="height: 50px;">
+          </div>
+         </div>
+       
+
+  
+          <div class="d-flex justify-content-between align-items-center" id="footer">
+            <div class="" id="ch4">
+              <h5 class="text-secondary ms-5 mt-3">Frequently Asked Questions</h5>
+              <p class="d-flex justify-content-evenly flex-column mt-4 ms-5">
+              <a href="" style="text-decoration:none;color: #097c8e;"> Virtual Try-On</a>
+              <a href="" style="text-decoration:none;color: #097c8e;">Lenses</a>
+              <a href="" style="text-decoration:none;color: #097c8e;">Shipping</a>
+              <a href="" style="text-decoration:none;color: #097c8e;">Prescriptions</a>
+            </p>
+            </div>
+            <div class="" id="ch4">
+              <h5 class="text-secondary ms-5 mt-3">Customer Service</h5>
+              <p class="d-flex justify-content-evenly flex-column mt-4 ms-5">
+              <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-truck"></i> Track My Order</a>
+              <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-right-left"></i> Return Information</a>
+              <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-barcode"></i> Gift Card Balance</a>
+              <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-phone"></i> Contact Us</a>
+            </p>
+            </div>
+            <div class="" id="ch4">
+              <h5 class="text-secondary ms-5 mt-3">Have a Question?</h5>
+              <p class="d-flex justify-content-evenly flex-column mt-4 ms-5">
+              <a href="" style="text-decoration: none;color: #097c8e;"> Visit Our Help Center</a>
+              <a href="" style="text-decoration: none;color: #097c8e;"><i class="fa-solid fa-comments"></i> Chat  Support 24/7</a>
+              <a href="" style="text-decoration: none;color: #097c8e;"><i class="fa-solid fa-envelope"></i> Email</a>
+            </p>
+            </div>
+            <div class="" id="ch4">
+              <p class="text-secondary ms-5 mt-3">(800) 211-2105</p>
+              <p class="text-secondary ms-5 mt-3">English 5AM – 9PM PT</p>
+              <p class="text-secondary ms-5 mt-3">Español & Français 5AM – 9PM PT</p>
+            </div>
+          </div>
+          <!-- footer section -->
+    <script src="product.js"></script>
+</body>
+
+</html>

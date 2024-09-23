@@ -1,0 +1,141 @@
+{
+  "user": [
+    {
+      "id": "0e84",
+      "first": "janvi",
+      "last": "kaliya",
+      "email": "janvi@gmail.com",
+      "pass": "12345678"
+    },
+    {
+      "id": "2f95",
+      "first": "janvi",
+      "last": "sfzsf",
+      "email": "fsdgxdg@gmailo.com",
+      "pass": "1234567"
+    }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "img": "https://static.zennioptical.com/production/products/general/44/27/4427439-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Sunglasses",
+      "rate": "4.4(187)",
+      "price": "30"
+    },
+    {
+      "id": "2",
+      "img": "https://static.zennioptical.com/production/products/general/12/79/127923-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Lensses",
+      "rate": "4.7(235)",
+      "price": "50"
+    },
+    {
+      "id": "3",
+      "img": "https://static.zennioptical.com/production/products/general/44/15/4415323-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Kids",
+      "rate": "3.9(97)",
+      "price": "15"
+    },
+    {
+      "id": "4",
+      "img": "https://static.zennioptical.com/production/products/general/78/38/7838325-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Primium Glasses",
+      "rate": "4.8(438)",
+      "price": "60"
+    },
+    {
+      "id": "5",
+      "img": "https://static.zennioptical.com/production/products/general/32/35/3235114-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Womens EyeGlasses",
+      "rate": "4.8(556)",
+      "price": "35"
+    },
+    {
+      "id": "6",
+      "img": "https://static.zennioptical.com/production/products/general/16/99/169912-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Mens EyeGlasses",
+      "rate": "4.2(29)",
+      "price": "30"
+    },
+    {
+      "id": "7",
+      "img": "https://static.zennioptical.com/production/products/general/32/12/3212711-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Atrective EyeGlasses",
+      "rate": "3.2(56)",
+      "price": "40"
+    },
+    {
+      "id": "8",
+      "img": "https://static.zennioptical.com/production/products/general/32/79/327912-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "special EyeGlasses",
+      "rate": "4.5(29)",
+      "price": "37"
+    }
+  ],
+  "cart": [
+    {
+      "id": "7",
+      "img": "https://static.zennioptical.com/production/products/general/32/12/3212711-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Atrective EyeGlasses",
+      "rate": "3.2(56)",
+      "price": "40"
+    },
+    {
+      "id": "2",
+      "img": "https://static.zennioptical.com/production/products/general/12/79/127923-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Lensses",
+      "rate": "4.7(235)",
+      "price": "50"
+    },
+    {
+      "id": "8",
+      "img": "https://static.zennioptical.com/production/products/general/32/79/327912-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "special EyeGlasses",
+      "rate": "4.5(29)",
+      "price": "37"
+    },
+    {
+      "id": "1",
+      "img": "https://static.zennioptical.com/production/products/general/44/27/4427439-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Sunglasses",
+      "rate": "4.4(187)",
+      "price": "30"
+    },
+    {
+      "id": "5",
+      "img": "https://static.zennioptical.com/production/products/general/32/35/3235114-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Womens EyeGlasses",
+      "rate": "4.8(556)",
+      "price": "35"
+    },
+    {
+      "id": "2",
+      "img": "https://static.zennioptical.com/production/products/general/12/79/127923-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Lensses",
+      "rate": "4.7(235)",
+      "price": "50"
+    },
+    {
+      "id": "3",
+      "img": "https://static.zennioptical.com/production/products/general/44/15/4415323-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Kids",
+      "rate": "3.9(97)",
+      "price": "15"
+    },
+    {
+      "id": "1",
+      "img": "https://static.zennioptical.com/production/products/general/44/27/4427439-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Sunglasses",
+      "rate": "4.4(187)",
+      "price": "30"
+    },
+    {
+      "id": "1",
+      "img": "https://static.zennioptical.com/production/products/general/44/27/4427439-eyeglasses-angle-view.jpg?output-quality=90&resize=500px:*",
+      "title": "Sunglasses",
+      "rate": "4.4(187)",
+      "price": "30"
+    }
+  ]
+}

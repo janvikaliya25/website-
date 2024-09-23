@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- css cdn -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- fontawsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jqery cdn -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- slider cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  </head>
+  <body>
+    <div class="main">
+      <!-- header section -->
+      <header
+        class="border border-secondary-emphasis container-fluid d-flex align-items-center justify-content-evenly"
+      >
+        <div class="" id="logo">
+          <img
+            src="image/Zenni_Logo (1).jpg"
+            alt=""
+            class="border border-secondary-emphasis"
+          />
+        </div>
+        <div
+          id="nav"
+          class="ms-5 d-flex justify-content-evenly align-items-center"
+        >
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      aria-current="page"
+                      href="#"
+                      style="font-size: 18px"
+                      >EYEGLASSES</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size: 18px"
+                      >SUNGLASSES</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      style="font-size: 18px"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      LENSES
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="product.html">product</a></li>
+                      <li>
+                        <!-- <a class="dropdown-item" href="#">Another pages</a> -->
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="signup.html"
+                          >signup</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size: 18px"
+                      >COLLECTIONS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size: 18px"
+                      >CONTACTS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="font-size: 18px"
+                      >BRANDS</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div
+          class="d-flex justify-content-evenly align-items-center"
+          id="Search"
+          style="height: 100%; width: 30%; position: relative"
+        >
+          <i
+            class="bi bi-search fs-3 text-secondary"
+            style="position: absolute; left: 10px"
+          ></i>
+          <input
+            type="text"
+            placeholder="Search glasses and contacts"
+            id="item"
+            class="w-100 h-75 border border-secondary border-1 ps-5"
+            style="border-radius: 50px"
+          />
+        </div>
+        <div
+          class="border border-secondary-emphasisn d-flex justify-content-evenly align-items-center"
+          id="logo2"
+        >
+          <div
+            class=" border border-secondary-emphasis d-flex justify-content-evenly align-items-center flex-column"
+            id="childe"
+          >
+            <i
+              class="fa-solid fa-user"
+              style="font-size: 25px; margin-top: 7px"><a href="signup.html"  id="signup"></a></i>
+            <p style="font-size: 20px"><a href="login.html" style="text-decoration: none;color: black;">Login</a></p>
+          </div>
+          <div
+            class=" border border-secondary-emphasis d-flex justify-content-evenly align-items-center flex-column"
+            id="childe"
+          >   
+            <i
+              class="fa-regular fa-heart"
+              style="font-size: 25px; margin-top: 7px"
+            ></i>
+            <p style="font-size: 20px">Favorite</p>
+          </div>
+          <div
+            class=" border border-secondary-emphasis d-flex justify-content-evenly align-items-center flex-column"
+            id="childe"
+          >
+            <i
+              class="fa-solid fa-question"
+              style="font-size: 25px; margin-top: 7px"
+            ></i>
+            <p style="font-size: 20px">Help</p>
+          </div>
+          <div
+            class=" border border-secondary-emphasis d-flex justify-content-evenly align-items-center flex-column"
+            id="childe"
+          >
+            <i
+              class="fa-solid fa-cart-shopping"
+              style="font-size: 25px; margin-top: 7px"
+            ></i>
+            <p style="font-size: 20px">Cart</p>
+          </div>
+        </div>
+      </header>
+      <!-- header section -->
+
+      <!-- section 1   -->
+      <div class="container" id="b">
+        <h1 class="text-center mt-4">Eyewear for Everyone</h1>
+        <p class="text-center" style="font-size: 18px">
+          Find affordable frames to fit your budget and style.
+        </p>
+        <div
+          class="d-flex justify-content-evenly align-items-center m-auto"
+          id="b1"
+        >
+          <div id="ch1">
+            <img src="image/2-daydelivery.jpg" alt="" />
+            <p class="text-center">3-5 day delivery</p>
+          </div>
+          <div id="ch1">
+            <img src="image/eyeglasses.jpg" alt="" />
+            <p class="text-center">Eyeglasses</p>
+          </div>
+          <div id="ch1">
+            <img src="image/sunglasses.jpg" alt="" />
+            <p class="text-center">Sunglasses</p>
+          </div>
+          <div id="ch1">
+            <img src="image/240620_BrandedFrames_campaign_navtype.jpg" alt="" />
+            <p class="text-center">Design Brands</p>
+          </div>
+          <div id="ch1">
+            <img src="image/transitions.jpg" alt="" />
+            <p class="text-center">Transitions</p>
+          </div>
+          <div id="ch1">
+            <img src="image/bluelight.jpg" alt="" />
+            <p class="text-center">Blue Light</p>
+          </div>
+        </div>
+      </div>
+      <!-- section 1   -->
+
+      <!-- section 2 -->
+      <div class="m-auto mt-4" id="c">
+        <swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"
+        pagination-clickable="true">
+        <swiper-slide>
+          <div id="c1">
+            <img src="image/NightDriving_hp_carousel_tile-xs.jpg" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div id="c1">
+            <img src="image/08142024_Frame_Shape_Oversized_promo_carousel_tile-xs.jpg" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div id="c1">
+            <img src="image/240807_Fall-New_Arrivals_promo_carousel_tile_xs.png" alt="">
+          </div>
+        </swiper-slide>
+      </swiper-container>    
+      </div>
+      <!-- section 2 -->
+
+      <!-- section 3 -->
+       <div class=" mt-5 d-flex justify-content-between align-items-center" id="d">
+        <div class=" d-flex align-items-center justify-content-evenly flex-column" id="ch2">
+          <h1 class="text-center text-light" style="font-size: 30px;">Free Shipping</h1>
+          <p class="text-center text-light fw-bold">Orders $65+</p>
+        </div>
+        <div class="" id="ch3">
+          <img src="image/TP-Logo-Tricolor-Black-RGB.svg" alt="" id="star">
+          <p class="text-center fs-6">150k+ 4.5 Reviews</p>
+        </div>
+        <div class="" id="ch3">
+          <img src="image/shipping.svg" alt="">
+          <p class="text-center fs-6">30-Dat Returns</p>
+        </div>
+        <div class="" id="ch3">
+          <img src="image/favorites.svg" alt="">
+          <p class="text-center fs-6">Best Customer Service</p>
+        </div>
+        <div class="" id="ch3">
+          <img src="image/medal.svg" alt="">
+          <p class="text-center fs-6">#1 Eyewear Rerailer</p>
+        </div>
+        <div class="" id="ch3">
+          <img src="image/gift.svg" alt="">
+          <p class="text-center fs-6">Zenni Rewards</p>
+        </div>
+       </div>
+      <!-- section 3 -->
+
+      <!-- section 4 -->
+       <div class="" id="e">
+        <h1 >Best Sellers</h1>
+        <button class="" id="btn1">Shop All ></button>
+        <ul class="nav" style="margin-left: -15px;">
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5" href="#">Eyeglasses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5" href="#">Sunglasses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark fs-5" href="#">Designer Glasses</a>
+          </li>
+        </ul>
+        <div class="" id="e1">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/A10121625-sunglasses-front-view.jpg" alt=""></div>
+                <h6 style="margin-top: 27px;font-size: 20px;">$9.5</h6>
+                <p>Ractangle Sunglasses</p>
+                 <button class="btn" id="btn2">Add</button>
+              </div>
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/2020825-eyeglasses-front-view.jpg" alt=""></div>
+                 <h6 style="margin-top: 27px;font-size: 20px;">$15.95</h6>
+                <p id="price"><i class="fa-solid fa-star" style="font-size:20px;color:  #efb92e;font-weight: bold;"></i> 3.9(180)</p>
+                <p>Round</p>
+                 <button class="btn" id="btn2">Add</button>
+              </div>
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/2026316-eyeglasses-front-view.jpg" alt=""></div>
+                 <h6 style="margin-top: 27px;font-size: 20px;">$19.95</h6>
+                <p id="price"><i class="fa-solid fa-star" style="font-size:20px;color:  #efb92e;font-weight: bold;"></i> 3.9(398)</p>
+                <p>Square</p>
+                 <button class="btn" id="btn2">Add</button>
+              </div>
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/3214721-eyeglasses-front-view.jpg" alt=""></div>
+                 <h6 style="margin-top: 27px;font-size: 20px;">$29.98</h6>
+                <p id="price"><i class="fa-solid fa-star" style="font-size:20px;color:  #efb92e;font-weight: bold;"></i> 4.6(31)</p>
+                <p>Browile</p>
+                 <button class="btn" id="btn2">Add</button>
+              </div>
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/3226118-eyeglasses-front-view.jpg" alt=""></div>
+                 <h6 style="margin-top: 27px;font-size: 20px;">$8.99</h6>
+                <p id="price"><i class="fa-solid fa-star" style="font-size:20px;color:  #efb92e;font-weight: bold;"></i> 3.2(34)</p>
+                <p>Cat-Eye</p>
+                 <button class="btn" id="btn2">Add</button>
+              </div>
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/2033615-eyeglasses-front-view.jpg" alt=""></div>
+                 <h6 style="margin-top: 27px;font-size: 20px;">$25.4</h6>
+                <p id="price"><i class="fa-solid fa-star" style="font-size:20px;color:  #efb92e;font-weight: bold;"></i> 4.4(125)</p>
+                <p>Cat-Eye</p>
+                 <button class="btn" id="btn2">Add</button>
+              </div>
+              <div class="swiper-slide" id="sld1">
+                <div id="gls" class="d-flex justify-content-between align-items-center"><img src="image/3214721-eyeglasses-front-view.jpg" alt=""></div>
+                 <h6 style="margin-top: 27px;font-size: 20px;">$15.95</h6>
+                <p id="price"><i class="fa-solid fa-star" style="font-size:20px;color:  #efb92e;font-weight: bold;"></i> 4.4(128)</p>
+                <p>Ractangle</p>
+                <button class="btn" id="btn2">Add</button>
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+       </div>
+      <!-- section 4 -->  
+
+      <!-- section 5 -->
+      <div class="m-auto mt-4" id="f">
+        <swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"
+        pagination-clickable="true">
+        <swiper-slide>
+          <div id="cf">
+            <img src="image/090324_TransitionsGenS_new_hp_carousel_male-xs.png" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div id="cf">
+            <img src="image/240903_kittles_HP_1Tile-xs.png" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div id="cf">
+            <img src="image/headset_compatible_gaming_carousel_tile_v2-xs.png" alt="">
+          </div>
+        </swiper-slide>
+      </swiper-container>    
+      </div>
+      <!-- section 5 -->
+
+      <!-- section 6 -->
+       <h1 class="text-center mt-5 fw-3">Shop By Frame Shape</h1>
+       <p class="text-center mt-3" style="font-size: 20px;">Choose your perfect frames from our stylish colors and patterns.</p>
+      <!-- section 6 -->
+
+      <!-- section 7 -->
+       <div class=" d-flex justify-content-between align-items-center" id="g">
+        <div class=" d-flex justify-content-evenly align-items-center flex-column" id="frame">
+          <img src="https://static.zennioptical.com/marketing/homepage/componentsRedesign/0820/frame_shape-Rectangle.svg" alt="">
+          <p >Ractangle</p>
+        </div>
+        <div class=" d-flex justify-content-evenly align-items-center flex-column" id="frame">
+          <img src="https://static.zennioptical.com/marketing/homepage/componentsRedesign/0820/frame_shape-Square.svg" alt="" style="height: 50px;">
+          <p >Square</p>
+        </div>
+        <div class=" d-flex justify-content-evenly align-items-center flex-column" id="frame">
+          <img src="https://static.zennioptical.com/marketing/homepage/componentsRedesign/0820/frame_shape-Round.svg" alt="" style="height: 50px;">
+          <p >Round</p>
+        </div>
+        <div class=" d-flex justify-content-evenly align-items-center flex-column" id="frame">
+          <img src="https://static.zennioptical.com/marketing/homepage/componentsRedesign/0820/frame_shape-Cat-eye.svg" alt="">
+          <p >Cat-Eye</p>
+        </div>
+        <div class=" d-flex justify-content-evenly align-items-center flex-column" id="frame">
+          <img src="https://static.zennioptical.com/marketing/homepage/componentsRedesign/0820/frame_shape-Aviator.svg" alt="">
+          <p >Avitor</p>
+        </div>
+        <div class=" d-flex justify-content-evenly align-items-center flex-column" id="frame">
+          <img src="https://static.zennioptical.com/marketing/homepage/componentsRedesign/0820/frame_shape-Browline.svg" alt="">
+          <p >Browline</p>
+        </div>
+        <div class=" d-flex justify-content-evenly align-items-center flex-column">
+        <button id="btn3">Shop All</button>
+      </div>
+       </div>
+      <!-- section 7 -->
+
+      <!-- section 8 -->
+      <div class="m-auto mt-4" id="h">
+        <swiper-container class="mySwiper" space-between="30" slides-per-view="auto" pagination="true"
+        pagination-clickable="true">
+        <swiper-slide>
+          <div id="h1">
+            <img src="image/091224_Goth_Girl_promo_cards-xs.jpg" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div id="h1">
+            <img src="image/240829_Game_Day_promo_carousel_tile-xs.png" alt="">
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div id="h1">
+            <img src="image/240815_Minimalist_promo_carousel_tile_xs.png" alt="">
+          </div>
+        </swiper-slide>
+      </swiper-container>    
+      </div>
+       <!-- section 8 -->
+
+         <!-- footer section -->
+         <div class="d-flex justify-content-evenly align-items-center flex-column" id="order" style="margin-top: 50px;">
+          <h1 class="text-center" style="margin-top: 50px;">Shop by Price</h1>
+          <p class="text-center" style="font-size: 20px;">Find affordable frames to fit your budget and style.</p>
+            <h3 class="text-center">Get 10% off your first order</h3>
+            <div id="social" class="d-flex justify-content-evenly align-items-center">
+              <img src="https://static.zennioptical.com/marketing/logo/zlogo/ZEN_Sym_teal.png" alt="" style="height: 30px;width: 40px;">
+              <h3 class="text-secondary">Socialize with us</h3>
+              <p class="fs-2 mt-2" style="color: #097c8e; cursor: pointer;"><i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-pinterest"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i></p>
+            </div>
+          </div>
+        
+  
+   
+           <div class="d-flex justify-content-evenly align-items-center" id="app">
+            <div class="d-flex justify-content-evenly align-items-center" id="content">
+              <img src="https://static.zennioptical.com/marketing/logo/zlogo/ZEN_Sym_teal.png" alt="" style="height: 30px;width: 40px;">
+              <h3 class="text-secondary">Get the app</h3>
+              <img src="https://static.zennioptical.com/marketing/logo/download-on-the-app-store.svg" alt="">
+              <img src="https://static.zennioptical.com/marketing/logo/get_it_on_google_play.png" alt="" style="height: 50px;">
+            </div>
+           </div>
+         
+  
+    
+            <div class="d-flex justify-content-between align-items-center" id="footer">
+              <div class="" id="ch4">
+                <h5 class="text-secondary ms-5 mt-3">Frequently Asked Questions</h5>
+                <p class="d-flex justify-content-evenly flex-column mt-4 ms-5">
+                <a href="" style="text-decoration:none;color: #097c8e;"> Virtual Try-On</a>
+                <a href="" style="text-decoration:none;color: #097c8e;">Lenses</a>
+                <a href="" style="text-decoration:none;color: #097c8e;">Shipping</a>
+                <a href="" style="text-decoration:none;color: #097c8e;">Prescriptions</a>
+              </p>
+              </div>
+              <div class="" id="ch4">
+                <h5 class="text-secondary ms-5 mt-3">Customer Service</h5>
+                <p class="d-flex justify-content-evenly flex-column mt-4 ms-5">
+                <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-truck"></i> Track My Order</a>
+                <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-right-left"></i> Return Information</a>
+                <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-barcode"></i> Gift Card Balance</a>
+                <a href="" style="text-decoration:none;color: #097c8e;"><i class="fa-solid fa-phone"></i> Contact Us</a>
+              </p>
+              </div>
+              <div class="" id="ch4">
+                <h5 class="text-secondary ms-5 mt-3">Have a Question?</h5>
+                <p class="d-flex justify-content-evenly flex-column mt-4 ms-5">
+                <a href="" style="text-decoration: none;color: #097c8e;"> Visit Our Help Center</a>
+                <a href="" style="text-decoration: none;color: #097c8e;"><i class="fa-solid fa-comments"></i> Chat  Support 24/7</a>
+                <a href="" style="text-decoration: none;color: #097c8e;"><i class="fa-solid fa-envelope"></i> Email</a>
+              </p>
+              </div>
+              <div class="" id="ch4">
+                <p class="text-secondary ms-5 mt-3">(800) 211-2105</p>
+                <p class="text-secondary ms-5 mt-3">English 5AM – 9PM PT</p>
+                <p class="text-secondary ms-5 mt-3">Español & Français 5AM – 9PM PT</p>
+              </div>
+            </div>
+          <!-- footer section -->
+    </div>
+  </body>
+  <!-- script.js -->
+  <script src="script.js"></script>
+  <!-- swiper slider  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- slider2 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>

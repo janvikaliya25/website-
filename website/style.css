@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main header{
+    height: 80px;
+    position: relative;
+}
+#logo{
+    /* position: relative; */
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+    /* background-image:url(image/Zenni_Logo\ \(1\).jpg); */
+}
+#logo img{
+    width: 100%;
+    height:100%;
+}
+#nav{
+    height: 100%;
+    width: 45%;
+}
+#logo2{
+    height: 100%;
+    width: 15%;
+    position: relative;
+}
+#logo2 #childe{
+    width: 25%;
+}
+#signup{
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+#signup:hover{
+    visibility: visible;
+    opacity: 1;
+}
+#childe::before{
+   position: absolute;
+   content: '';
+   width: 0;
+   height: 2px;
+   left: 0;
+   top: 0;
+   background-color: #007b8f;
+   transition: 1s;
+   z-index: 1;
+}
+#childe:hover::before{
+    width: 25%;
+}
+#b1{
+    height: 140px;
+    width: 80%;
+}
+#b1 #ch1{
+    height: 100%;
+    width: 16.7%;
+    transition: 1s;
+    cursor: pointer;
+}
+#b1 #ch1:hover{
+    box-shadow: 1px 1px 1px 1px;
+}
+#b1 #ch1 img{
+    height: 30%;
+    width: 60%;
+    margin-top: 25%;
+    margin-left: 30px;
+}
+#c{
+    height: 400px;
+    width: 70%;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+} */
+swiper-slide #c1{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit:cover;
+  border-radius: 30px;
+}
+swiper-slide {
+  width: 95%;
+}
+swiper-slide:nth-child(2n) {
+    width: 95%;
+}
+swiper-slide:nth-child(3n) {
+    width: 95%;
+}
+#d{
+    height: 100px;
+    width: 70%;
+    margin-left: 15%;
+}
+#d #ch2{
+    height: 100%;
+    width: 16%;
+    border-radius: 10px;
+    background-color: #084045;
+    cursor: pointer;
+}
+#d #ch3{
+    height: 100%;
+    width: 16%;
+    border-radius: 10px;
+    background-color: #f1eaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 2s;
+}
+#d #ch3:hover{
+    border: 1px solid gray;
+}
+#d #ch3 img{
+    margin-top: 20px;
+}
+#d #ch3 #star{
+    height: 70px;
+    width: 110px;
+}
+#e{
+    margin-top: 100px;
+    position: relative;
+    width: 70%;
+    margin-left: 15%;
+}
+#e #btn1{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#e #btn1:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+#e #e1{
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+/* .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+#sld1{
+    height: 500px;
+    position: relative;
+}
+#sld1 #gls{
+    height: 350px;
+    width: 100%;
+    background-color: #fafafa;
+}
+ #sld1 #gls img{
+    height: 100px;
+    width: 310px;
+ }
+#sld1 #price{
+    position: absolute;
+    right: 0;
+    top: 75%;
+}
+#sld1 #btn2{
+    border: 1px solid black;
+    width: 100px;
+}
+#sld1 #btn2:hover{
+    background-color: black;
+    color: white;
+}
+#f{
+    height: 400px;
+    width: 70%;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+} */
+swiper-slide #cf{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit:cover;
+  border-radius: 30px;
+}
+swiper-slide {
+  width: 95%;
+}
+swiper-slide:nth-child(2n) {
+    width: 95%;
+}
+swiper-slide:nth-child(3n) {
+    width: 95%;
+}
+#g{
+    height: 120px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 70px;
+}
+#g #frame{
+    height: 100%;
+    width: 14%;
+    cursor: pointer;
+    transition: 2s;
+}
+#g #frame:hover{
+    border: 1px solid black;
+}
+#g #frame img{
+    margin-top: 20px;
+}
+#g #btn3{
+    height: 50px;
+    width: 170px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+    margin-top: -20px;
+}
+#g  #btn3:hover{
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+#h{
+    height: 400px;
+    width: 70%;
+}
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+} */
+swiper-slide #h1{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit:cover;
+  border-radius: 30px;
+}
+swiper-slide {
+  width: 95%;
+}
+swiper-slide:nth-child(2n) {
+    width: 95%;
+}
+swiper-slide:nth-child(3n) {
+    width: 95%;
+}
+#order{
+    border: 1px solid gray;
+}
+#order #social{
+    width: 30%;
+}
+#app{
+    height: 100px;
+    border: 1px solid gray;
+    background-color: #f5f5f5;
+}
+#app #content{
+    width: 30%;
+}
+#footer{
+    height: 180px;
+}
+#ch4{
+    margin-top: 5px;
+    width: 25%;
+    height: 100%;
+}
